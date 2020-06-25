@@ -11,12 +11,12 @@ on:
 #      - '.config'
 #  schedule:
 #    - cron: 0 8 * * 5
- jobs:
+jobs:
    build:
      runs-on: ubuntu-latest
-    steps:
-       - name: Checkout
-         uses: actions/checkout@Caf
+steps:
+   - name: Checkout
+     uses: actions/checkout@Caf
        
        - name: Clean Up
          run: |
