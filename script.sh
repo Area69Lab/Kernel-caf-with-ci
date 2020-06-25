@@ -17,7 +17,7 @@ function variables() {
     ESSENTIAL_VARIABLES() {
         TOOLCHAIN_DIR=DronaKernel/build/non-oc/toolchain
         KERNEL_DIR=DronaKernel/build/non-oc/kernel
-        KERNEL_OUTPUT_DIR=DronaKernel/build/non-oc/out
+        KERNEL_OUTPUT_DIR=workdir
         KERNEL_DEFCONFIG=drona-rosy_defconfig
         KERNEL_ARCH=arm64
     }
