@@ -37,4 +37,4 @@ jobs:
        - name: Downloading script from remote repo
          run: |
             wget https://raw.githubusercontent.com/Area69Lab/kernel-caf/master/script.sh
-            bash non-oc.sh
+            bash script.sh
