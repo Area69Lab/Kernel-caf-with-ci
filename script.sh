@@ -33,7 +33,7 @@ function variables() {
 
         anykernel() {
             essential_variables() {
-                AK_DIR=workdir
+                AK_DIR=workdir/ak3
                 KERNEL_NAME=dronakernel
             }
             remote_variables() {
