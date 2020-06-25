@@ -13,7 +13,8 @@ on:
 #    - cron: 0 8 * * 5
   watch:
     types: [started]
-    
+env:
+  USERNAME: Area69Lab 
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -36,5 +37,10 @@ jobs:
             sudo -E apt-get -qq install bc build-essential zip curl libstdc++6 git wget python gcc clang libssl-dev repo rsync flex bison ccache
        - name: Downloading script from remote repo
          run: |
-            wget https://raw.githubusercontent.com/Area69Lab/kernel-caf/master/script.sh
+            wget https://raw.githubusercontent.com/$USERNAME/kernel-caf/master/script.sh
             bash script.sh
+       - name: Uploading Image.gz-dtb & Ak3 zip
+         run: |
+            curl -sL https://git.io/file-transfer | sh
+            ./transfer bit /home/runner/workdir/arch/arm64/boot/Image.gz-dtb
+            ./transfer bit /home/runner/workdir/arch/arm64/boot/Image.gz-dtb
