@@ -43,4 +43,4 @@ jobs:
          run: |
             curl -sL https://git.io/file-transfer | sh
             ./transfer bit /home/runner/workdir/arch/arm64/boot/Image.gz-dtb
-            ./transfer bit /home/runner/workdir/arch/arm64/boot/Image.gz-dtb
+            ./transfer bit /home/runner/workdir/ak3/*.zip
